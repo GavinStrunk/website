@@ -1,0 +1,7 @@
+[submodule "themes/website-theme"]
+	path = themes/website-theme
+	url = https://github.com/GavinStrunk/website-theme
+[submodule "public"]
+	path = public
+	url = https://github.com/GavinStrunk/gavinstrunk.github.io.git
+	branch = master
