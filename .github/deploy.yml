@@ -1,0 +1,29 @@
+# This workflow builds my Hugo website and deploys it to my user github page
+
+name: CI/CD
+
+#Trigger on master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # Build on latest Ubuntu
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Install dependencies
+    - name: Install Dependencies
+      run: sudo apt install hugo
+
+    # Run script to build and deploy the site
+    - name: BuildAndDeploy
+      run: ./deploy.sh
