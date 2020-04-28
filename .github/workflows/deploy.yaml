@@ -21,9 +21,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - uses: fregante/setup-git-token@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
 
     # Install dependencies
     # Hugo needs to be a newer version so I am using 0.68.3
@@ -34,10 +31,10 @@ jobs:
         rm hugo*.deb
 
     # You have to set your git credentails so you can push the changes
-    #- name: Set Git Creds
-    #  run: |
-    #    git config --global user.email "gavin.strunk@gmail.com"
-    #    git config --global user.name "Gavin Strunk"
+    - name: Set Git Creds
+      run: |
+        git config --global user.email "gavin.strunk@gmail.com"
+        git config --global user.name "Gavin Strunk"
         
     # Run script to build and deploy the site
     - name: BuildAndDeploy
@@ -45,4 +42,6 @@ jobs:
 
     # Push the changes
     - name: Push new site
-      run: git push origin master
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
