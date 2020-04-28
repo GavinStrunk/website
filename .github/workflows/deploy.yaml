@@ -30,6 +30,12 @@ jobs:
         sudo dpkg -i hugo*.deb
         rm hugo*.deb
 
+    # You have to set your git credentails so you can push the changes
+    - name: Set Git Creds
+      run: |
+        git config --global user.email "gavin.strunk@gmail.com"
+        git config --global user.name "Gavin Strunk"
+        
     # Run script to build and deploy the site
     - name: BuildAndDeploy
       run: ./deploy.sh
