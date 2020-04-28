@@ -23,8 +23,12 @@ jobs:
         submodules: 'recursive'
 
     # Install dependencies
+    # Hugo needs to be a newer version so I am using 0.68.3
     - name: Install Dependencies
-      run: sudo apt install hugo
+      run: |
+        wget https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.deb
+        sudo apt install hugo*.deb
+        rm hugo*.deb
 
     # Run script to build and deploy the site
     - name: BuildAndDeploy
