@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://gavinstrunk.github.io"
 title = "Gavin Strunk Portfolio"
 copyright = "Copyright © 2020 Gavin Strunk; all rights reserved."
 paginate = 2
@@ -8,7 +8,6 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-XXXX"
 DisqusShortname = ""
-#theme = "hugo-theme-chunky-poster"
 theme = "website-theme"
 
 [menu]
@@ -37,9 +36,9 @@ series = "series"
 [params]
   #author = "Hugo Authors"
   description = "Research Scientist"
-  #homepageImage = "/images/homepage-image.jpg"
   homepageImage = "/images/rob2.png"
-  share = true
+  #Show the share a post icons
+  share = false
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
@@ -48,9 +47,8 @@ series = "series"
 
   [params.social]
     email = "gavin.strunk@gmail.com"
-    linkedin = "https://linkedin.com"
-    github = "https://github.com"
-    gitlab = "https://gitlab.com"
+    linkedin = "https://www.linkedin.com/in/gavinstrunk/"
+    github = "https://github.com/GavinStrunk"
 
   [params.prismJS]
     enable = true
