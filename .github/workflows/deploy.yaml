@@ -48,6 +48,6 @@ jobs:
     - name: Push new site
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.DEPLOY_TOKEN }}
         directory: public
         repository: GavinStrunk/gavinstrunk.github.io
