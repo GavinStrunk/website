@@ -11,6 +11,9 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
 cd public
 
+# Make sure you are on the master branch and
+git checkout master
+
 # Add changes to git.
 git add .
 
