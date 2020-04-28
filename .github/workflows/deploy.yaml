@@ -39,3 +39,9 @@ jobs:
     # Run script to build and deploy the site
     - name: BuildAndDeploy
       run: ./deploy.sh
+
+    # Push the changes
+    - name: Push new site
+      run: git push origin master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
