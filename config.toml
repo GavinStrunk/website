@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://gavinstrunk.github.io"
 title = "Gavin Strunk Portfolio"
 copyright = "Copyright © 2020 Gavin Strunk; all rights reserved."
 paginate = 2
@@ -8,38 +8,43 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-XXXX"
 DisqusShortname = ""
-#theme = "hugo-theme-chunky-poster"
 theme = "website-theme"
 
 [menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
+
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 0
   [[menu.main]]
-    identifier = "portfolio"
-    name = "Portfolio"
-    url = "/posts/"
+    identifier = "Projects"
+    name = "Projects"
+    url = "/categories/Project"
+    weight = 0
+  [[menu.main]]
+    identifier = "Tutorials"
+    name = "Tutorials"
+    url = "/categories/Tutorial"
     weight = 0
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 series = "series"
-#author = "authors"
 
 [params]
-  #author = "Hugo Authors"
-  description = "Research Scientist"
-  #homepageImage = "/images/homepage-image.jpg"
-  homepageImage = "/images/rob2.png"
-  share = true
+  # Settings for the Home page text
+  name = "Gavin Strunk"
+  description = "Robotics Research Scientist"
+  about = """
+    This site is a collection of my indepedent research, <br>
+    fun projects, and some tutorials. Enjoy!
+    """
+  homepageImage = "/images/homepage-image.png"
+
+  #Show the social media share a post icons
+  share = false
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
@@ -48,9 +53,8 @@ series = "series"
 
   [params.social]
     email = "gavin.strunk@gmail.com"
-    linkedin = "https://linkedin.com"
-    github = "https://github.com"
-    gitlab = "https://gitlab.com"
+    linkedin = "https://www.linkedin.com/in/gavinstrunk/"
+    github = "https://github.com/GavinStrunk"
 
   [params.prismJS]
     enable = true
