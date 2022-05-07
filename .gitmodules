@@ -5,3 +5,6 @@
 	path = public
 	url = https://github.com/GavinStrunk/gavinstrunk.github.io.git
 	branch = master
+[submodule "themes/hugo-creative-portfolio-theme"]
+	path = themes/hugo-creative-portfolio-theme
+	url = https://github.com/GavinStrunk/hugo-creative-portfolio-theme
