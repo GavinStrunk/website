@@ -10,15 +10,15 @@ googleAnalytics = ""
 [params]
   # Home Page Image
   image = "img/Casual.png"
-  
+
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
-  description = "This is my awesome description"
+  description = "This is my portfolio website to share research results."
   copyright = "&copy;2022 Gavin Strunk"
   sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
+    "My name is Gavin Strunk, and I am currently a researcher at Scientific Systems in the Intelligent Controls Group. I have worked on a wide variety of projects in fields of control theory, optimization, and artificial intelligence.", 
+    "My current research focuses are related to optimal control/MPC, reinforcement learning, and trajectory optimization. This site contains some research from my professional work, but it is primarily meant to share results from my indepedent research projects. Everyone needs a hobby!"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
