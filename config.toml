@@ -53,9 +53,9 @@ googleAnalytics = ""
   name = "Resume"
   url = "files/Resume.pdf"
 
-  [[params.navlinks]]
-  name = "CV"
-  url = "files/CV.pdf"
+  #[[params.navlinks]]
+  #name = "CV"
+  #url = "files/CV.pdf"
 
   [params.social]
   email         = "gavin.strunk@gmail.com"
