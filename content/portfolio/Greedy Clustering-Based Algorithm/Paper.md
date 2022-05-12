@@ -1,8 +1,8 @@
 +++
-date = "2022-01-05T19:41:01+05:30"
+date = "2022-05-01T19:41:01+05:30"
 title = "Greedy Clustering-Based Algorithm for Improving Multi-point Robotic Manipulation Sequencing"
 draft = false
-image = "portfolio/Greedy Clustering-Based Algorithm/algorithm_block_diagram.jpg"
+image = "img/portfolio/algorithm_block_diagram.jpg"
 showonlyimage = false
 weight = 1
 +++
@@ -13,7 +13,7 @@ May 2022
 <!--more-->
 [Full paper](https://arxiv.org/abs/2205.02662)
 
-![](Casual.jpg)
+![](/img/portfolio/algorithm_block_diagram.jpg)
 
 ### Abstract
 
